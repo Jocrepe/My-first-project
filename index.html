@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Project</title>
+
+</head>
+<body>
+    <div class="bar">
+        <h1>Home</h1>
+        <div style="background-color: lightgray; width: 400px;">
+        <i>เว็บไซต์นี้สร้างขึ้นสำหรับการส่งโปรเจค Borntodev เท่านั้น</i>
+        </div>
+    </div>
+    <div class="main">
+        <div class="content">
+
+            <div class="title">
+                <h1>Workout" time calculator</h1>
+            </div>
+            <div class="calculate">
+                <h2 id="title1">กรุณากรอกวินาทีที่คุณออกกำลังกายทั้งหมด</h2>
+                <input type="text" id="inputValue" style="width: 250px; margin-left: 230px; height: 30px; font-size: 24px;">
+                <h2 id="title2">กดปุ่มเพื่อแปลงจากวินาทีเป็น ชั่วโมง นาที วินาที</h2>
+                <button onclick="CalcTimeProgram(document.getElementById('inputValue').value)" id="Calcbut">Calculate</button>
+                <h2 id="title3"></h2>
+                <h2 id="res"></h2>
+                <script src="apps.js"></script>
+            </div>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <p>Th</p>
+</footer>
+</html>
