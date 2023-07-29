@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Project</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Roboto+Mono&family=Victor+Mono&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+  <title>Workouttime V.2</title>
 </head>
 <body>
-    <div class="bar">
-        <h1>Home</h1>
-        <div style="background-color: lightgray; width: 400px;">
-        <i>เว็บไซต์นี้สร้างขึ้นสำหรับการส่งโปรเจค Borntodev เท่านั้น</i>
-        </div>
-    </div>
-    <div class="main">
-        <div class="content">
-
-            <div class="title">
-                <h1>Workout time calculator</h1>
-            </div>
-            <div class="calculate">
-                <h2 id="title1">กรุณากรอกวินาทีที่คุณออกกำลังกายทั้งหมด</h2>
-                <input type="text" id="inputValue" style="width: 250px; margin-left: 230px; height: 30px; font-size: 24px;">
-                <h2 id="title2">กดปุ่มเพื่อแปลงจากวินาทีเป็น ชั่วโมง นาที วินาที</h2>
-                <button onclick="CalcTimeProgram(document.getElementById('inputValue').value)" id="Calcbut">Calculate</button>
-                <h2 id="title3"></h2>
-                <h2 id="res"></h2>
-                <script src="apps.js"></script>
-            </div>
-        </div>
+  <!-- Nav start -->
+  <nav class="bar">
+    <div class="logo">
+      <a href="#">Workout</a>
     </div>
 
+    <ul class="contacts">
+      <li><a href="https://www.facebook.com/profile.php?id=100007246305087" target="_blank">Facebook</a></li>
+      <li><a href="https://www.instagram.com/_ktp.crepe/" target="_blank">Instragram</a></li>
+      <li><a href="https://github.com/Jocrepe">Github</a></li>
+    </ul>
+  </nav>
+  <!-- Nav end -->
+
+  <!-- Section start -->
+  <section class="section">
+      <div class="section-info">
+        <img src="workout.jpg" alt="">
+        <div class="animate">
+          <h3 id="ani1">Workout time Calculator</h3>
+          <h3 id="ani2">Version.2 By Jocrepe</h3>
+        </div>
+      </div>
+  </section>
+  <!-- Section end -->
+
+  <!-- Main start -->
+  <main class="contents">
+      <h3 id="title1">Please enter all the seconds you exercise.</h3>
+      <input type="text" id="userinputId">
+      <h3 id="title2">Press the button to convert from seconds to hours, minutes, seconds.</h3>
+      <button id="btn" onclick="CalctimeProgram(document.getElementById('userinputId').value)">Calculate</button>
+      <h3 id="title3"></h3>
+      <h3 id="resdisplay"></h3>
+    </main>
+  <!-- Main end -->
 </body>
-<footer>
-    <p>Th</p>
-</footer>
+<script src="apps.js"></script>
 </html>
